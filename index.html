@@ -12,16 +12,23 @@
         color: #00ff62;
       }
 
-      hr {
-        border: none;
-        height: 2px;
-        background-color: #00ff62;
+      h2 {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        color: #00ff62;
+        font-size: 15px;
       }
 
       p {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 500;
         color: #00ff62;
+      }
+
+      hr {
+        border: none;
+        height: 2px;
+        background-color: #00ff62;
       }
 
       input {
@@ -59,6 +66,11 @@
       p.foot {
         font-size: 13px !important;
       }
+
+      .cipherout,.decipherout {
+        font-size: 20px;
+        font-weight: 700;
+      }
     </style>
     <title>democipher!</title>
   </head>
@@ -76,7 +88,8 @@
     <p>amount to shift forward: </p>
     <input id="cipheramount" type="number" min="1" value="1">
     <button id="cipheractivate">cipher!</button>
-    <p id="cipherout">‎</p>
+    <h2>ciphered text:</h2>
+    <p id="cipherout" class="cipherout">‎</p>
     <!-- end cipher area-->
 
     <hr>
@@ -87,7 +100,7 @@
     <p>amount to shift backward: </p>
     <input id="decipheramount" type="number" min="1" value="1">
     <button id="decipheractivate">decipher!</button>
-    <p id="decipherout">‎</p>
+    <p id="decipherout" class="decipherout">‎</p>
     <!-- end de cipher area -->
 
     <hr>
